@@ -297,8 +297,7 @@
 }
 .contacto_text a{
     text-decoration: none;
-    padding: 10px;
-}
+    padding: 10px;git pull
 .contacto{
     display: flex;
     flex-direction: column ;
