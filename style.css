@@ -234,8 +234,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    
+    width: 200px;    
 }
 .servicios img{
     width: 100%;
@@ -261,6 +260,12 @@
     text-align: center;
     align-self: center;
 }
+.flecha{
+    position: fixed;
+    bottom: 230px;
+    right: 20px;
+    z-index: 1;
+}
                /* CONTACTO */
 .hero_contacto{
     height: 60vh;
@@ -275,10 +280,29 @@
     color: #fff;
     font-size: 80px; 
 }
-.contacto{
+.contacto_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+.contacto_text{
+    width: 800px;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+}
+.contacto_text h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+.contacto_text a{
+    text-decoration: none;
+    padding: 10px;
+}
+.contacto{
+    display: flex;
+    flex-direction: column ;
+    padding: 0px 0px 60px 60px;
 }
 .contacto p{
     margin: 10px;
@@ -286,6 +310,44 @@
 .contacto h2{
     font-weight: 600;
     font-size: 30px;
+}
+.container_formulario{
+    width: 800px;    
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f9dcda7a;    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    }
+.formulario_items{
+    display: flex;
+    margin: 5px 0px;
+}
+.formulario_items label{
+    flex-basis: 100px;
+}
+.formulario_items input{
+    flex: 1;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.btn{
+    background-color: #73c6b559;
+    text-transform: uppercase;
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #73c6b5de;
 }
 
                 /* RECETAS */
@@ -308,6 +370,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
+    padding: 60px;
 }
 .recetas{
     display: flex;
